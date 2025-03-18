@@ -24,6 +24,9 @@ jobs:
         id: change-list
         run: |
           CHANGES=()
+          git log
+          echo "${{ toJson(github.event) }}"
+          echo "${{ toJson(github) }}"
           for f in $(git diff --name-only \
                      "${{ github.event.pull_request.base.sha }}" \
                      | grep "\.hcl$")
