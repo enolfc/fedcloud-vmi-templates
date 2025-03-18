@@ -37,7 +37,7 @@ source "qemu" "datahub_jupyter_ubuntu_22_04" {
     "<enter>"
   ]
   boot_wait                 = "5s"
-  disk_size                 = 8001
+  disk_size                 = 8003
   format                    = "qcow2"
   headless                  = true
   http_directory            = "httpdir"

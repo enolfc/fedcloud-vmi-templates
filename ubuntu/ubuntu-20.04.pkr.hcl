@@ -40,7 +40,7 @@ source "qemu" "ubuntu_20_04" {
     "<wait><enter>"
   ]
   boot_wait                 = "3s"
-  disk_size                 = 8000
+  disk_size                 = 8002
   format                    = "qcow2"
   headless                  = true
   http_directory            = "httpdir"
